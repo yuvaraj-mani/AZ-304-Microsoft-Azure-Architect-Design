@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab: Implementing Azure SQL Database-Based Applications'
-    module: 'Module 2: Data Storage'
+    module: 'Module 6: Design a Solution for Databases'
 ---
 
 # Lab: Implementing Azure SQL Database-Based Applications
