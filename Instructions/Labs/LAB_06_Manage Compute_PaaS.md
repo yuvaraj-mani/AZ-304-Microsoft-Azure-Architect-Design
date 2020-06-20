@@ -4,7 +4,7 @@ lab:
     module: 'Module 1: Design a Compute Solution'
 ---
 
-# Lab: Implementing containers on Azure
+# Lab: Implementing Containers on Azure
 # Student lab manual
 
 ## Lab scenario
