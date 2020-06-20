@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab: Migrating Hyper-V VMs to Azure by using Azure Migrate'
-    module: 'Module 4: Migrating to Azure'
+    module: 'Module 3: Design for Migration'
 ---
 
 # Lab: Migrating Hyper-V VMs to Azure by using Azure Migrate
