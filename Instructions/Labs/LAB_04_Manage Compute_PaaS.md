@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab: Implement Azure Logic Apps integration with Azure Event Grid'
-    module: 'Module 3: Manage Compute - PaaS'
+    module: 'Module 13: Design an Application Architecture'
 ---
 
 # Lab: Implement Azure Logic Apps integration with Azure Event Grid
