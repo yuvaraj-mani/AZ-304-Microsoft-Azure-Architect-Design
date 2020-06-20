@@ -1,7 +1,7 @@
 ---
 lab:
-    title: 'Lab: Implementing containers on Azure'
-    module: 'Module 3: Manage Compute - PaaS'
+    title: 'Lab: Implementing Containers on Azure'
+    module: 'Module 1: Design a Compute Solution'
 ---
 
 # Lab: Implementing containers on Azure
