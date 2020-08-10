@@ -288,7 +288,7 @@ The main tasks for this exercise are as follows:
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | the name of a new resource group **az30308c-labRG** |
+    | Resource group | **az30308c-labRG** |
     | Name | **az30308c-test-vnet** |
     | Region | the name of the Azure region into which you deployed the virtual machine earlier in this lab |
 
