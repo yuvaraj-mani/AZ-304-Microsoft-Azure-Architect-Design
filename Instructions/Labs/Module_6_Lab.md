@@ -315,4 +315,10 @@ The main tasks for this exercise are as follows:
    az group list --query "[?starts_with(name,'az30303')]".name --output tsv | xargs -L1 bash -c 'az group delete --name $0 --no-wait --yes'
    ```
 
+1. From the Cloud Shell pane, run the following to remove the folder named **az30303a1**:
+
+   ```sh
+   rm -r ~/az30303a1
+   ```
+
 1. Close the Cloud Shell pane.
