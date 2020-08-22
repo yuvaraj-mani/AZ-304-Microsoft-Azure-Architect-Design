@@ -237,9 +237,9 @@ The main tasks for this exercise are as follows:
 
 1. Within the Remote Desktop session to **az30308a-hv-vm**, start Internet Explorer, navigate to the [Azure portal](https://portal.azure.com), and sign in by providing credentials of a user account with the Owner role in the subscription you will be using in this lab.
 
-1. In the Azure portal, search for and select **Azure Migrate**, on the **Azure Migrate** blade, in the **Migration goals** section, select **Servers**, and then select **Add tool(s)**.
+1. In the Azure portal, search for and select **Azure Migrate**, on the **Azure Migrate** blade, in the **Migration goals** section, select **Create Project**.
 
-1. On the **Migrate project** tab of the **Add a tool** blade, specify the following settings (leave others with their default values) and select **Next**:
+1. On the **Azure Migrate** blade, specify the following settings (leave others with their default values) and select **Create**:
 
     | Setting | Value | 
     | --- | --- |
@@ -247,12 +247,6 @@ The main tasks for this exercise are as follows:
     | Resource group | the name of a new resource group **az30308b-labRG** |
     | Migrate project | **az30308b-migrate-project** |
     | Geography | the name of your country or a geographical region |
-
-1. On the **Select assessment tool** tab of the **Add a tool** blade, select **Azure Migrate: Server Assessment** and then select **Next**:
-
-1. On the **Select migration tool** tab of the **Add a tool** blade, select the checkbox **Skip adding a migration tool for now** and then select **Next**:
-
-1. On the **Review + add tool(s)** tab of the **Add a tool** blade, select **Add tool(s)**. 
 
 
 #### Task 3: Implement the target Azure environment
