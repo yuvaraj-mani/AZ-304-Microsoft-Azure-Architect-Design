@@ -309,7 +309,7 @@ The main tasks for this exercise are as follows:
     | --- | --- |
     | Name | **event-subscription-az30304a-LabRG** |
     | Event Schema | **Event Grid Schema** |
-    | System Topic name | **event-topic-az30304a-LabRG** |
+    | System Topic name | accept the default value |
     | Filter to Event Types | **Resource Write Success**, **Resource Delete Success**, **Resource Action Success** |
     | Endpoint Type | **Web Hook** | 
     | Endpoint | the URL string you copied at the beginning of this task |
