@@ -331,7 +331,13 @@ The main tasks for this exercise are as follows:
 
 1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Internet Explorer window, in the Azure portal, on the **Azure Migrate | Server** blade, select **Discover** in the **Azure Migrate: Server Assessment** tile. 
 
-1. On the **Discover machines** blade, in the **Are your machines virtualized** drop-down list, select **Yes, with Hyper-V**, then select **Download** and, when prompted, set the download location to the **F:\VMs** folder.
+1. On the **Discover machines** blade, in the **Are your machines virtualized** drop-down list, select **Yes, with Hyper-V**. 
+
+1. On the **Discover machines** blade, in the **Name your appliance** text box, type **az30308a-vma1** and select the **Generate key** button.
+
+1. Wait for the resource provisioning to complete, within the Remote Desktop session to **az30308a-hv-vm**, start Notepad, and copy the **Azure Migrate project key** into Notepad. 
+
+1. On the **Discover machines** blade, in the **Name your appliance** text box, select the **.VHD file** option, select **Download** and, when prompted, set the download location to the **F:\VMs** folder.
 
     >**Note**: Wait for the download to complete. This might take about 5 minutes.
 
