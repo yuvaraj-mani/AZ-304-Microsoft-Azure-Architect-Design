@@ -587,7 +587,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **Migrate** blade, in the **Shutdown machines before migration to minimize data loss?** drop-down list, select **Yes**, next select the checkbox next to the **az30308a-vm1** entry, and then select **Migrate**.
 
-1. To monitor the status of migration, navigate back to the **Azure Migrate | Servers** blade, in the **Azure Migrate: Server Migration** tile, select the **Replicating servers** entry and, on the **Azure Migrate: Server Migration | Replicating machines**, examine the **Status** column in the list of the replicating machines. Verify that the status displayed the **Failover completed** status.
+1. To monitor the status of migration, navigate back to the **Azure Migrate | Servers** blade, in the **Azure Migrate: Server Migration** tile, select the **Replicating servers** entry and, on the **Azure Migrate: Server Migration | Replicating machines**, examine the **Status** column in the list of the replicating machines. Verify that the status displayed the **Planned failover finished** status.
 
     >**Note**: Migration is supposed to be a non-reversible action.
 
