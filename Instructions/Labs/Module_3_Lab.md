@@ -397,9 +397,11 @@ The main tasks for this exercise are as follows:
 
     >**Note**: This will allow name resolution between the virtual appliance and the Hyper-V host.
 
-1. Within the Remote Desktop session to **az30308a-hv-vm**, start Internet Explorer, navigate to the [https://`IPaddress`:44368](https://`IPaddress`:44368), where the `IPaddress` placeholder represents the IP address you identified in the previous step.
+1. Within the Remote Desktop session to **az30308a-hv-vm**, download Microsoft Edge installed and run the installation with the default settings.
 
-1. In the browser window, ignore the warning about the website's security certificate and select the link **Continue to this website (not recommended)**. 
+1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Microsoft Edge window, navigate to the [https://`IPaddress`:44368](https://`IPaddress`:44368), where the `IPaddress` placeholder represents the IP address you identified in the previous step.
+
+    >**Note**: Ignore the warning about the website's security certificate. 
 
 1. When prompted, sign in with the following credentials:
 
@@ -408,23 +410,23 @@ The main tasks for this exercise are as follows:
     | User Name | **Administrator** |
     | Password | **Pa55w.rd1234** |
 
-1. Within the Internet Explorer window, on the **Set up discovery for Azure Migrate** page, select the checkbox in the **Accept license terms** section, wait for the prerequisites to be successfully verified, and select **Continue**. 
+1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, select the **I agree** button, wait for the prerequisites to be successfully verified, and select **Continue**. 
 
-1. Within the Internet Explorer window, on the **Set up discovery for Azure Migrate** page, in the **Register with Azure Migrate** section, select **Login**, sign in by providing credentials of a user account with the Owner role in the subscription you are using in this lab, select the target Azure subscription and the Azure Migrate project you created earlier in this lab, in the **Enter Appliance Name** text box, type **az30308a-vma1**, and select **Register**. 
+1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, in the **Register with Azure Migrate** section, in the **Provide Azure Migrate project key** text box, paste the key you copied into Notepad earlier in this exercise, select **Login**, accept the default code displayed in the **Enter code** pane in the browser page, sign in by providing credentials of a user account with the Owner role in the subscription you are using in this lab and close the browser page. 
 
-1. Within the Internet Explorer window, on the **Set up discovery for Azure Migrate** page, verify that registration was successful and select **Continue**. 
+1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, verify that registration was successful and select **Continue**. 
 
-1. Within the Internet Explorer window, on the **Set up discovery for Azure Migrate** page, in the **Provide Hyper-V hosts details** section, specify the following settings, select **Save details**:
+1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, in the **Manage credentials and discovery sources** section, select **Add credentials**, in the **Add credentials** pane, specify the following settings, select **Save**:
 
     | Setting | Value | 
     | --- | --- |
+    | Friendly Name | **az30308acreds** |    
     | User Name | **Student** |
     | Password | **Pa55w.rd1234** |
-    | Friendly Name | **az30308a Hyper-V creds** |
 
-1. Within the Internet Explorer window, on the **Set up discovery for Azure Migrate** page, in the **Provide Hyper-V hosts details** section, select **Add**, in the **Provide list of Hyper-V hosts and clusters** window, type **az30308a-hv-vm** and select **Validate**. 
+1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, in the **Provide Hyper-V host/cluster details** section, select **Add discovery source**, in the **Add discovery source** pane, select the **Add single item** option, ensure that the **Discovery source** drop-down list is set to **Hyper-V Host/Cluster**, in the **Friendly name** drop-down list, select the **az30308acreds** entry, in the **IP address /FQDN** text box, type **10.0.2.1**, and select **Save**. 
 
-1. Within the Internet Explorer window, on the **Set up discovery for Azure Migrate** page, in the **Provide Hyper-V hosts details** section, select **Save and start discovery**. 
+1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, in the **Provide Hyper-V host/cluster details** section, select **Start discovery**. 
 
     >**Note**: In general, it might take about 1.5 minutes per host for metadata of discovered servers to appear in the Azure portal.
 
