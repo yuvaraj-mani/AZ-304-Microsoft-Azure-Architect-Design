@@ -357,7 +357,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **Choose Folders for Virtual Machine Files** page of the **Import Virtual Machine** wizard, select the checkbox **Store the virtual machine in a different location**, set each of the locations to the **F:\VMs** folder, and select **Next >**.
 
-1. On the **Choose Folders for Virtual Machine Files** page of the **Import Virtual Machine** wizard, set **Location** to the **F:\VHDs** folder, and select **Next >**.
+1. On the **Choose Folders for Virtual Machine Disks** page of the **Import Virtual Machine** wizard, set **Location** to the **F:\VHDs** folder, and select **Next >**.
 
 1. On the **Configure Processor** page of the **Import Virtual Machine** wizard, set **Number of virtual processors** to **4**, and select **Next >**.
 
