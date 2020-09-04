@@ -78,7 +78,7 @@ The main tasks for this exercise are as follows:
     | Server admin login | **sqladmin** |
     | Password | **Pa55w.rd1234** |
     | Location | the name of an Azure region where you can provision SQL databases |
-    | Allow Azure services to access server | ***Select the checkbox*** |
+    | Allow Azure services to access server | ensure that the checkbox is cleared |
 
 1. Next to the **Compute + storage** label, select the **Configure database** link.
 
@@ -91,7 +91,7 @@ The main tasks for this exercise are as follows:
     | Setting | Value | 
     | --- | --- |
     | Connectivity method | **Public endpoint** |    
-    | Allow Azure services and resources to access this server | **Yes** |
+    | Allow Azure services and resources to access this server | **No** |
     | Add current client IP address | **Yes** |
 
 1. Select **Next: Additional settings >**. 
