@@ -68,7 +68,7 @@ The main tasks for this exercise are as follows:
 
 1. If prompted to select either **Bash** or **PowerShell**, select **PowerShell**. 
 
-    >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and select **Create storage**. 
+   >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and select **Create storage**. 
 
 1. In the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu select **Upload**, and upload the file **\\\\AZ303\\AllFiles\Labs\\08\\azuredeploy30308suba.json** into the Cloud Shell home directory.
 
@@ -335,11 +335,13 @@ The main tasks for this exercise are as follows:
 
 1. On the **Discover machines** blade, in the **Name your appliance** text box, type **az30308a-vma1** and select the **Generate key** button.
 
+   >**Note**: If you encounter a permission-related error while generating an Azure Migrate project key, in the Azure portal, navigate to the **Subscriptions** blade, select your subscription, on your subscription blade, select **Access Control (IAM)** and then assign the **Owner** role to your Azure AD user account.
+
 1. Wait for the resource provisioning to complete, within the Remote Desktop session to **az30308a-hv-vm**, start Notepad, and copy the **Azure Migrate project key** into Notepad. 
 
 1. On the **Discover machines** blade, in the **Name your appliance** text box, select the **.VHD file** option, select **Download** and, when prompted, set the download location to the **F:\VMs** folder.
 
-    >**Note**: Wait for the download to complete. This might take about 5 minutes.
+   >**Note**: Wait for the download to complete. This might take about 5 minutes.
 
 1. Once the download completes, extract the content of the downloaded .ZIP file into the **F:\VMs** folder. 
 
@@ -363,7 +365,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **Summary** page of the **Import Virtual Machine** wizard, select **Finish**.
 
-    >**Note**: Wait for the download to complete. This might take about 10 minutes.
+   >**Note**: Wait for the download to complete. This might take about 10 minutes.
 
 1. In the **Hyper-V Manager** console, select the newly imported virtual machine, select **Rename** and set is name to **az30308a-vma1**.
 
@@ -395,13 +397,13 @@ The main tasks for this exercise are as follows:
    Add-Content -Path C:\Windows\System32\drivers\etc\hosts -Value "10.0.2.1  az30308a-hv-vm" -Force
    ```
 
-    >**Note**: This will allow name resolution between the virtual appliance and the Hyper-V host.
+   >**Note**: This will allow name resolution between the virtual appliance and the Hyper-V host.
 
 1. Within the Remote Desktop session to **az30308a-hv-vm**, download Microsoft Edge installed and run the installation with the default settings.
 
 1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Microsoft Edge window, navigate to the [https://`IPaddress`:44368](https://`IPaddress`:44368), where the `IPaddress` placeholder represents the IP address you identified in the previous step.
 
-    >**Note**: Ignore the warning about the website's security certificate. 
+   >**Note**: Ignore the warning about the website's security certificate. 
 
 1. When prompted, sign in with the following credentials:
 
@@ -428,14 +430,14 @@ The main tasks for this exercise are as follows:
 
 1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, in the **Provide Hyper-V host/cluster details** section, select **Start discovery**. 
 
-    >**Note**: In general, it might take about 1.5 minutes per host for metadata of discovered servers to appear in the Azure portal.
+   >**Note**: In general, it might take about 1.5 minutes per host for metadata of discovered servers to appear in the Azure portal.
 
 
 #### Task 2: Configure, run, and view an assessment
 
 1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Internet Explorer window displaying the Azure portal, navigate back to the **Azure Migrate | Servers** blade, select **Refresh**, and, in the **Azure Migrate: Server Assessment** tile, select **Assess**.
 
-    >**Note**: You might refresh the page again. 
+   >**Note**: You might refresh the page again. 
 
 1. On the **Assess servers** blade, set **Assessment name** to **az30308a-assessment** and select the **View all** link next to the **Assessment properties** label.
 
@@ -454,7 +456,7 @@ The main tasks for this exercise are as follows:
     | Discount | **0** |
     | VM uptime | **31** Day(s) per month and **24** Hour(s) per day| 
 
-    >**Note**: Considering the limited time inherent to the lab environment, the only viable option in this case is **As on-premises** assessment. 
+   >**Note**: Considering the limited time inherent to the lab environment, the only viable option in this case is **As on-premises** assessment. 
 
 1. Back on the **Assess servers** blade, ensure that the **Create new** option is selected, set the group name to **az30308a-assessment-group**, in the list of machines to be added to the group, select **az30308a-vm1**, and select **Create assessment**. 
 
@@ -464,7 +466,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **az30308a-assessment** blade, review the information indicating Azure readiness and monthly cost estimate for both compute and storage. 
 
-    >**Note**: In real-world scenarios, you should consider installing dependency agent to provide more insights into server dependencies during the assessment stage.
+   >**Note**: In real-world scenarios, you should consider installing dependency agent to provide more insights into server dependencies during the assessment stage.
 
 
 ### Exercise 3: Migrate Hyper-V VMs by using Azure Migrate
@@ -520,16 +522,16 @@ The main tasks for this exercise are as follows:
 
 1. Once the registration process completes, on the **Discover machines** blade, select **Finalize registration**.
 
-    >**Note**: You might have to refresh the browser page displaying the **Discover machines** blade and navigate back to it.
+   >**Note**: You might have to refresh the browser page displaying the **Discover machines** blade and navigate back to it.
 
-    >**Note**: It might take up to 15 minutes for the discovery of virtual machines to complete.
+   >**Note**: It might take up to 15 minutes for the discovery of virtual machines to complete.
 
 
 #### Task 2: Configure replication of Hyper-V VMs
 
 1. Once you receive the confirmation that the registration was finalized, navigate back to the **Azure Migrate | Servers** blade, in the **Azure Migrate: Server Migration** tile, select the **Replicate** link. 
 
-    >**Note**: You might have to refresh the browser page displaying the **Azure Migrate | Servers** blade.
+   >**Note**: You might have to refresh the browser page displaying the **Azure Migrate | Servers** blade.
 
 1. On the **Source settings** page of the **Replicate** blade, in the **Are your machines virtualized?** drop-down list, select **Yes, with Hyper-V** and select **Next: Virtual machines**.  
 
@@ -571,7 +573,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **Test migration** blade, in the **Virtual network** drop-down list, select **az30308c-test-vnet** and select **Test migration**.
 
-    >**Note**: Wait for the test migration to complete. This might take about 5 minutes.
+   >**Note**: Wait for the test migration to complete. This might take about 5 minutes.
 
 1. In the Azure portal, search for and select **Virtual machines** and, on the **Virtual machines** blade, note the entry representing the newly provisioned virtual machine **az30308a-vm1-test**.
 
@@ -591,7 +593,7 @@ The main tasks for this exercise are as follows:
 
 1. To monitor the status of migration, navigate back to the **Azure Migrate | Servers** blade, in the **Azure Migrate: Server Migration** tile, select the **Replicating servers** entry and, on the **Azure Migrate: Server Migration | Replicating machines**, examine the **Status** column in the list of the replicating machines. Verify that the status displayed the **Planned failover finished** status.
 
-    >**Note**: Migration is supposed to be a non-reversible action.
+   >**Note**: Migration is supposed to be a non-reversible action.
 
 
 #### Task 4: Remove Azure resources deployed in the lab
@@ -604,7 +606,7 @@ The main tasks for this exercise are as follows:
    Get-AzResourceGroup -Name 'az30308*'
    ```
 
-    > **Note**: Verify that the output contains only the resource group you created in this lab. This group will be deleted in this task.
+   > **Note**: Verify that the output contains only the resource group you created in this lab. This group will be deleted in this task.
 
 1. From the Cloud Shell pane, run the following to delete the resource group you created in this lab
 
