@@ -224,7 +224,7 @@ The main tasks for this exercise are as follows:
 1. Configure properties of synchronized user accounts
 
 
-#### Task 1: Assign a custom domain name to the Azur AD tenant
+#### Task 1: Assign a custom domain name to the Azure AD tenant
 
 1. In the Azure portal, navigate to the **Azure Active Directory Adatum Lab | Overview** blade.
 
