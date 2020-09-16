@@ -77,7 +77,10 @@ The main tasks for this exercise are as follows:
     ```powershell
     Test-AzDnsAvailability -DomainNameLabel <custom-label> -Location '<location>'
     ```
-      > **Note**: To identify Azure regions where you can provision Azure VMs, refer to [https://azure.microsoft.com/en-us/regions/offers/](https://azure.microsoft.com/en-us/regions/offers/)
+      > **Note**: To identify Azure regions where you can provision Azure VMs, refer to [https://azure.microsoft.com/en-us/regions/offers/](https://azure.microsoft.com/en-us/regions/offers/), you can also get the list of the regions using **Powershell cmdlet**
+      ```powershell
+      Get-AzLocation | FT
+      ```
 
 1. Verify that the command returned **True**. If not, rerun the same command with a different value of the `<custom-label>` until the command returns **True**.
 
@@ -212,7 +215,7 @@ The main tasks for this exercise are as follows:
   
 The main tasks for this exercise are as follows:
 
-1. Assign a custom domain name to the Azur AD tenant
+1. Assign a custom domain name to the Azure AD tenant
 
 1. Configure AD DS in the Azure VM
 
@@ -223,7 +226,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 1: Assign a custom domain name to the Azur AD tenant
 
-1. In the Azure portal, navigate to the **Adatum Lab | Overview** blade.
+1. In the Azure portal, navigate to the **Azure Active Directory Adatum Lab | Overview** blade.
 
 1. On the **Adatum Lab | Overview** blade, select **Custom domain names**.
 
