@@ -237,7 +237,7 @@ The main tasks for this exercise are as follows:
 
 1. Within the Remote Desktop session to **az30308a-hv-vm**, start Internet Explorer, navigate to the [Azure portal](https://portal.azure.com), and sign in by providing credentials of a user account with the Owner role in the subscription you will be using in this lab.
 
-1. In the Azure portal, search for and select **Azure Migrate**, on the **Azure Migrate** blade, in the **Migration goals** section, select **Create Project**.
+1. In the Azure portal, search for and select **Azure Migrate**, on the **Azure Migrate** blade, in the **Migration goals** section, select **Servers** and then select **Create Project**.
 
 1. On the **Azure Migrate** blade, specify the following settings (leave others with their default values) and select **Create**:
 
