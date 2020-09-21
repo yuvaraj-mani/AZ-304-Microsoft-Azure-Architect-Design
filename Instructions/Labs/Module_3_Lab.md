@@ -72,10 +72,17 @@ The main tasks for this exercise are as follows:
 
 1. In the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu select **Upload**, and upload the file **\\\\AZ303\\AllFiles\Labs\\08\\azuredeploy30308suba.json** into the Cloud Shell home directory.
 
-1. From the Cloud Shell pane, run the following to create a resource groups (replace the `<Azure region>` placeholder with the name of the Azure region that is available for deployment of Azure VMs in your subscription and which is closest to the location of your lab computer):
+1. From the Cloud Shell, run the following command to set a variable named location with an Azure Region near you (replace the `<Azure region>` placeholder with the name of the Azure region that is available for deployment of Azure VMs in your subscription and which is closest to the location of your lab computer, for example `'eastus'`):
 
    ```powershell
    $location = '<Azure region>'
+   ```
+
+      > **Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
+      
+1. From the Cloud Shell pane, run the following to create a resource groups 
+
+   ```powershell
    New-AzSubscriptionDeployment `
      -Location $location `
      -Name az30308subaDeployment `
@@ -84,11 +91,13 @@ The main tasks for this exercise are as follows:
      -rgName 'az30308a-labRG'
    ```
 
-      > **Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
-
 1. In the Azure portal, close the **Cloud Shell** pane.
 
 1. From your lab computer, open another browser tab, navigate to the [301-nested-vms-in-virtual-network Azure QuickStart template](https://github.com/Azure/azure-quickstart-templates/tree/master/301-nested-vms-in-virtual-network) and select **Deploy to Azure**. This will automatically redirect the browser to the **Hyper-V Host Virtual Machine with nested VMs** blade in the Azure portal.
+
+``` url
+https://github.com/Azure/azure-quickstart-templates/tree/master/301-nested-vms-in-virtual-network
+```
 
 1. On the **Hyper-V Host Virtual Machine with nested VMs** blade in the Azure portal, specify the following settings (leave others with their default values):
 
