@@ -471,9 +471,7 @@ The main tasks for this exercise are as follows:
 
 1. From the lab computer, in the browser window displaying the Azure portal, navigate to the **Azure Active Directory Premium P2 - Licensed users** blade, select the user accounts to which you assigned licenses in this lab, select **Remove license**, and, when prompted to confirm, select **OK**.
 
-1. In the Azure portal, navigate to the **Users - All users** blade and ensure that all user accounts you created in this lab have the **Azure Active Directory** entry in the **Source** column. 
-
-    > **Note**: If that's not the case, refresh the browser page.
+1. In the Azure portal, navigate to the **Users - All users** blade and ensure that all user accounts you created in this lab are no longer listed as **Directory synced**.
 
 1. On the **Users - All users** blade, select each user accounts you created in this lab and select **Delete** in the toolbar. 
 
