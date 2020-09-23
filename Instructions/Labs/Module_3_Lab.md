@@ -62,7 +62,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 1: Deploy an Azure VM by using an Azure Resource Manager QuickStart template
 
-1. From your lab computer, start a web browser, navigate to the [Azure portal](https://portal.azure.com), and sign in by providing credentials of a user account with the Owner role in the subscription you will be using in this lab.
+1. From your lab computer, start a web browser, navigate to the [Azure portal](https://portal.azure.com) - `portal.azure.com`, and sign in by providing credentials of a user account with the Owner role in the subscription you will be using in this lab.
 
 1. In the Azure portal, open **Cloud Shell** pane by selecting on the toolbar icon directly to the right of the search textbox.
 
@@ -72,7 +72,7 @@ The main tasks for this exercise are as follows:
 
 1. In the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu select **Upload**, and upload the file **\\\\AZ303\\AllFiles\Labs\\08\\azuredeploy30308suba.json** into the Cloud Shell home directory.
 
-1. From the Cloud Shell, run the following command to set a variable named location with an Azure Region near you (replace the `<Azure region>` placeholder with the name of the Azure region that is available for deployment of Azure VMs in your subscription and which is closest to the location of your lab computer, for example `'eastus'`):
+1. From the Cloud Shell, run the following command to set a variable named location with an Azure Region near you (replace the '<Azure region>' placeholder with the name of the Azure region that is available for deployment of Azure VMs in your subscription and which is closest to the location of your lab computer, for example 'eastus'):
 
    ```powershell
    $location = '<Azure region>'
@@ -80,7 +80,7 @@ The main tasks for this exercise are as follows:
 
       > **Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
       
-1. From the Cloud Shell pane, run the following to create a resource groups 
+1. From the Cloud Shell pane, run the following to create a resource group:
 
    ```powershell
    New-AzSubscriptionDeployment `
@@ -95,9 +95,9 @@ The main tasks for this exercise are as follows:
 
 1. From your lab computer, open another browser tab, navigate to the [301-nested-vms-in-virtual-network Azure QuickStart template](https://github.com/Azure/azure-quickstart-templates/tree/master/301-nested-vms-in-virtual-network) and select **Deploy to Azure**. This will automatically redirect the browser to the **Hyper-V Host Virtual Machine with nested VMs** blade in the Azure portal.
 
-``` url
-https://github.com/Azure/azure-quickstart-templates/tree/master/301-nested-vms-in-virtual-network
-```
+    ``` url
+    https://github.com/Azure/azure-quickstart-templates/tree/master/301-nested-vms-in-virtual-network
+    ```
 
 1. On the **Hyper-V Host Virtual Machine with nested VMs** blade in the Azure portal, specify the following settings (leave others with their default values):
 
@@ -139,20 +139,30 @@ https://github.com/Azure/azure-quickstart-templates/tree/master/301-nested-vms-i
 
 1. On the **az30308a-hv-vm** blade, select **Connect**, in the drop-down menu, select **RDP**, and then click **Download RDP File**.
 
-1. When prompted, sign in with the following credentials:
+1. When prompted, click **Connect** and sign in with the following credentials:
 
     | Setting | Value | 
     | --- | --- |
     | User Name | **Student** |
     | Password | **Pa55w.rd1234** |
 
-1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Server Manager window, click **Local Server**, click the **On** link next to the **IE Enhanced Security Configuration** label, and, in the **IE Enhanced Security Configuration** dialog box, select both **Off** options.
+1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Server Manager window, click **Local Server**, click the **On** link next to the **IE Enhanced Security Configuration** label, and, in the **IE Enhanced Security Configuration** dialog box, select both **Off** options and then click **OK**.
 
-1. Within the Remote Desktop session to **az30308a-hv-vm**, start Internet Explorer, browse to [Windows Server Evaluations](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019), and download the Windows Server 2019 **VHD** file to the **F:\VHDs** folder (you will need to create it first). 
+1. From the Remote Desktop session, open File Explorer and navigate to the **F:**. Create a folder named **VHDs**.
 
-1. Within the Remote Desktop session to **az30308a-hv-vm**, start **Hyper-V Manager**. 
+1. Within the Remote Desktop session to **az30308a-hv-vm**, start Internet Explorer, browse to [Windows Server Evaluations](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019), and download the Windows Server 2019 **VHD** file to the **F:\VHDs** folder. 
+    
+    ```url
+    https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019
+    ```
+    
+    > **Note**: The evaluations page will ask for personal information to complete the download. Choose 'United Kingdom' or another country to be able to opt-out of notifications.
 
-1. In the **Hyper-V Manager** console, select the **az30308a-hv-vm** node, select **New** and, in the cascading menu, select **Virtual Machine**. This will start the **New Virtual Machine Wizard**. 
+1. Within the Remote Desktop session to **az30308a-hv-vm**, click Start, and then click **Windows Administrative Tools**, then launch **Hyper-V Manager**. 
+
+1. In the **Hyper-V Manager** console, select the **az30308a-hv-vm** node. 
+
+1. Click **New** and, in the cascading menu, select **Virtual Machine**. This will start the **New Virtual Machine Wizard**. 
 
 1. On the **Before You Begin** page of the **New Virtual Machine Wizard**, select **Next >**.
 
@@ -207,7 +217,11 @@ The main tasks for this exercise are as follows:
 
 #### Task 1: Configure Hyper-V environment
 
-1. Within the Remote Desktop session to **az30308a-hv-vm**, start Internet Explorer, navigate to the [Microsoft Download Center](https://aka.ms/migrate/script/hyperv), and download the configuration PowerShell script into the Downloads folder.
+1. Within the Remote Desktop session to **az30308a-hv-vm**, start Internet Explorer, navigate to the [Microsoft Download Center](https://aka.ms/migrate/script/hyperv), and download the configuration PowerShell script to the **F:**.
+
+    ```url
+    https://aka.ms/migrate/script/hyperv
+    ```
 
     >**Note**: The script performs the following tasks:
 
@@ -227,15 +241,15 @@ The main tasks for this exercise are as follows:
 
     - Enables CredSSP on the host if needed.
 
-1. Within the Remote Desktop session to **az30308a-hv-vm**, start Windows PowerShell ISE. 
+1. Within the Remote Desktop session to **az30308a-hv-vm**, start **Windows PowerShell ISE**. 
 
 1. In the **Administrator: Windows PowerShell ISE** window, in the console pane, run the following to remove the Zone.Identifier alternate data stream, which, in this case, indicates that the file was downloaded from the Internet.
 
    ```powershell
-   Unblock-File -Path C:\Users\Student\Downloads\MicrosoftAzureMigrate-Hyper-V.ps1
+   Unblock-File -Path F:\MicrosoftAzureMigrate-Hyper-V.ps1
    ```
 
-1. In the **Administrator: Windows PowerShell ISE** window, open the **MicrosoftAzureMigrate-Hyper-V.ps1** script residing in the **Downloads** folder and run it. When prompted for confirmation, press the **Y** key followed by the **Enter** key, with exception of the following prompts, in which case, type **N** followed by the **Enter** key:
+1. In the **Administrator: Windows PowerShell ISE** window, open the **MicrosoftAzureMigrate-Hyper-V.ps1** script residing in the **F:** folder and run it. When prompted for confirmation, press the **Y** key followed by the **Enter** key, with exception of the following prompts, in which case, type **N** followed by the **Enter** key:
 
 - Do you use SMB share(s) to store the VHDs?
 
@@ -338,7 +352,9 @@ The main tasks for this exercise are as follows:
 
 #### Task 1: Deploy and configure the Azure Migrate appliance
 
-1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Internet Explorer window, in the Azure portal, on the **Azure Migrate | Server** blade, select **Discover** in the **Azure Migrate: Server Assessment** tile. 
+1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Internet Explorer window, in the Azure portal, search for and select **Azure Migrate**.
+
+1. On the **Azure Migrate | Servers** blade, select **Discover** in the **Azure Migrate: Server Assessment** tile. 
 
 1. On the **Discover machines** blade, in the **Are your machines virtualized** drop-down list, select **Yes, with Hyper-V**. 
 
@@ -358,15 +374,11 @@ The main tasks for this exercise are as follows:
 
 1. On the **Before You Begin** page of the **Import Virtual Machine** wizard, select **Next >**.
 
-1. On the **Locate Folder** page of the **Import Virtual Machine** wizard, specify the location of the extracted files and select **Next >**:
+1. On the **Locate Folder** page of the **Import Virtual Machine** wizard, specify the location of the extracted **Virtual Machines** folder and select **Next >**:
 
 1. On the **Select Virtual Machine** page of the **Import Virtual Machine** wizard, select **Next >**:
 
-1. On the **Choose Import Type** page of the **Import Virtual Machine** wizard, select **Copy the virtual machine (create a new unique ID)** and select **Next >**.
-
-1. On the **Choose Folders for Virtual Machine Files** page of the **Import Virtual Machine** wizard, select the checkbox **Store the virtual machine in a different location**, set each of the locations to the **F:\VMs** folder, and select **Next >**.
-
-1. On the **Choose Folders for Virtual Machine Disks** page of the **Import Virtual Machine** wizard, set **Location** to the **F:\VHDs** folder, and select **Next >**.
+1. On the **Choose Import Type** page of the **Import Virtual Machine** wizard, select **Register the virtual machine (use the existing unique ID)** and select **Next >**.
 
 1. On the **Configure Processor** page of the **Import Virtual Machine** wizard, set **Number of virtual processors** to **4**, and select **Next >**.
 
@@ -374,7 +386,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **Summary** page of the **Import Virtual Machine** wizard, select **Finish**.
 
-   >**Note**: Wait for the download to complete. This might take about 10 minutes.
+   >**Note**: Wait for the import to complete. This might take about 10 minutes.
 
 1. In the **Hyper-V Manager** console, select the newly imported virtual machine, select **Rename** and set is name to **az30308a-vma1**.
 
@@ -388,27 +400,13 @@ The main tasks for this exercise are as follows:
 
 1. In the Virtual Machine Connection window to the virtual appliance, sign in by using the newly set password.
 
-1. In the Virtual Machine Connection window to the virtual appliance, start Windows PowerShell and, in the **Administrator: Windows PowerShell** window run the following to set the computer name. 
-
-   ```powershell
-   Rename-Computer -NewName 'az30308a-vma1' -Restart
-   ```
-
 1. Within the Remote Desktop session to the virtual appliance, start Windows PowerShell and run the following to identify its IP address.
 
    ```powershell
    (Get-NetIPAddress).IPAddress
    ```
 
-1. Within the Remote Desktop session to the virtual appliance, in the Windows PowerShell console run the following to add the entry representing the Hyper-V host to the local hosts file:
-
-   ```cmd
-   Add-Content -Path C:\Windows\System32\drivers\etc\hosts -Value "10.0.2.1  az30308a-hv-vm" -Force
-   ```
-
-   >**Note**: This will allow name resolution between the virtual appliance and the Hyper-V host.
-
-1. Within the Remote Desktop session to **az30308a-hv-vm**, download Microsoft Edge installed and run the installation with the default settings.
+1. Within the Remote Desktop session to **az30308a-hv-vm**, download Microsoft Edge and run the installation with the default settings.
 
 1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Microsoft Edge window, navigate to the [https://`IPaddress`:44368](https://`IPaddress`:44368), where the `IPaddress` placeholder represents the IP address you identified in the previous step.
 
@@ -467,7 +465,11 @@ The main tasks for this exercise are as follows:
 
    >**Note**: Considering the limited time inherent to the lab environment, the only viable option in this case is **As on-premises** assessment. 
 
-1. Back on the **Assess servers** blade, ensure that the **Create new** option is selected, set the group name to **az30308a-assessment-group**, in the list of machines to be added to the group, select **az30308a-vm1**, and select **Create assessment**. 
+1. Back on the **Assess servers** blade, go to the **Select machines to assess** tab.
+
+1. Ensure that the **Create new** option is selected, set the group name to **az30308a-assessment-group**, in the list of machines to be added to the group, select **az30308a-vm1**.
+
+1. Click **Next**, and then click **Create assessment**. 
 
 1. Navigate back to the **Azure Migrate | Servers** blade, select **Refresh**, in the **Azure Migrate: Server Assessment** tile, verify that there the **Assessments** line contains **1** entry, and select it.
 
