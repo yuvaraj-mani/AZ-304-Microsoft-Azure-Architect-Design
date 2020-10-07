@@ -95,6 +95,8 @@ The main tasks for this exercise are as follows:
 
    ```powershell
    $location = '<Azure region>'
+   ```
+   ```powershell
    New-AzSubscriptionDeployment `
      -Location $location `
      -Name az30410subaDeployment `
@@ -157,7 +159,7 @@ The main tasks for this exercise are as follows:
 
 1. Refresh the browser page displaying the Azure portal, search for and select **Azure Active Directory** and, on the Azure Active Directory blade, select **Switch tenant**.
 
-1. In the **Directory + subscription** blade, select **Adatum Lab**. 
+1. In the **Directory + subscription** blade, on the **Adatum Lab** card, click **Switch**.
 
 
 #### Task 2: Create and configure Azure AD users
