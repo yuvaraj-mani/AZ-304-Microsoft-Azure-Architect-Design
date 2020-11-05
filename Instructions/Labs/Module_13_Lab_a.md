@@ -1,3 +1,4 @@
+active
 ---
 lab:
     title: '13: Implement Azure Logic Apps integration with Azure Event Grid'
@@ -138,7 +139,7 @@ The main tasks for this exercise are as follows:
 1. From the Cloud Shell pane, run the following to create a new Azure AD service principal associated with the application you created in the previous step:
 
    ```powershell
-   New-AzADServicePrincipal -ApplicationId $az30304aadapp.ApplicationId.Guid
+   New-AzADServicePrincipal -ApplicationId $az30304aadapp.ApplicationId.Guid -SkipAssignment
    ```
 
 1. In the output of the **New-AzADServicePrincipal** command, note the value of the **ApplicationId** property. You will need it later in this exercise.
