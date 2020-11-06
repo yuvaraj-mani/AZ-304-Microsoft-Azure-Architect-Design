@@ -50,11 +50,11 @@ Estimated Time: 60 minutes
 
 ## Lab Files
 
--  \\\\AZ303\\AllFiles\\Labs\\04\\azuredeploy30304suba.json
+-  \\\\AZ304\\AllFiles\\Labs\\04\\azuredeploy30304suba.json
 
--  \\\\AZ303\\AllFiles\\Labs\\04\\azuredeploy30304rga.json
+-  \\\\AZ304\\AllFiles\\Labs\\04\\azuredeploy30304rga.json
 
--  \\\\AZ303\\AllFiles\\Labs\\04\\azuredeploy30304rga.parameters.json
+-  \\\\AZ304\\AllFiles\\Labs\\04\\azuredeploy30304rga.parameters.json
 
 ## Instructions
 
