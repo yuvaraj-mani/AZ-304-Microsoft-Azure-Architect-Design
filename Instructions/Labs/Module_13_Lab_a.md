@@ -1,4 +1,3 @@
-active
 ---
 lab:
     title: '13: Implement Azure Logic Apps integration with Azure Event Grid'
