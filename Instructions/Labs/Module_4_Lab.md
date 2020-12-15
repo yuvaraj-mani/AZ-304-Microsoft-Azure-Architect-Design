@@ -471,6 +471,8 @@ The main tasks for this exercise are as follows:
    Set-MsolDirSyncEnabled -EnableDirSync $false -Force
    ```
 
+    > **Note**: If you receive an error message at this point, you might have to wait for up to 12 hours and try again.
+
 1. From the lab computer, in the browser window displaying the Azure portal, navigate to the **Azure Active Directory Premium P2 - Licensed users** blade, select the user accounts to which you assigned licenses in this lab, select **Remove license**, and, when prompted to confirm, select **OK**.
 
 1. In the Azure portal, navigate to the **Users - All users** blade and ensure that all user accounts you created in this lab are no longer listed as **Directory synced**.
