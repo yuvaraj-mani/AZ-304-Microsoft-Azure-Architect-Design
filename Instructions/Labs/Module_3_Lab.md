@@ -596,9 +596,9 @@ The main tasks for this exercise are as follows:
 
 1. On the **Test migrate cleanup** blade, select the checkbox **Testing is complete. Delete test virtual machine** and select **Cleanup Test**.
 
-1. Once the test failover cleanup job completes, refresh the browser page displaying the **az30307a-vm1** replicating machines blade and note that the **Migrate** icon in the toolbar became automatically available.
+1. Once the test failover cleanup job completes, refresh the browser page displaying the **az30308a-vm1** replicating machines blade and note that the **Migrate** icon in the toolbar became automatically available.
 
-1. On the **az30307a-vm1** replicating machines blade, select the **Migrate** link. 
+1. On the **az30308a-vm1** replicating machines blade, select the **Migrate** link. 
 
 1. On the **Migrate** blade, in the **Shutdown machines before migration to minimize data loss?** drop-down list, select **Yes**, next select the checkbox next to the **az30308a-vm1** entry, and then select **Migrate**.
 
