@@ -89,7 +89,7 @@ The main tasks for this exercise are as follows:
 
     | Setting | Value | 
     | --- | --- |
-    | Connectivity method | **Public endpoint** |    
+    | Connectivity method | **Public endpoint** |  
     | Allow Azure services and resources to access this server | **No** |
     | Add current client IP address | **Yes** |
 
@@ -100,7 +100,7 @@ The main tasks for this exercise are as follows:
     | Setting | Value | 
     | --- | --- |
     | Use existing data | **Sample** |
-    | Enable advanced data security | **Not now** |
+    | Enable Azure Defender for SQL | **Not now** |
 
 1. Select **Review + create** and then select **Create**. 
 
