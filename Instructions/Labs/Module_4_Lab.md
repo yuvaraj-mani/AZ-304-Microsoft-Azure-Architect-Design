@@ -123,7 +123,7 @@ The main tasks for this exercise are as follows:
     | Resource group | **az30410a-labRG** |
     | Dns Prefix | the DNS hostname you identified in the previous task| 
 
-1. On the **Create an Azure VM with a new AD Forest** blade, select the checkbox **I agree to the terms and conditions above** and select **Purchase**.
+1. On the **Create an Azure VM with a new AD Forest** blade, select **Review + create** and select **Create**.
 
     > **Note**: Do not wait for the deployment to complete but instead proceed to the next exercise. The deployment might take about 15 minutes. You will use the virtual machine deployed in this task in the third exercise of this lab.
 
@@ -166,7 +166,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **Adatum Lab \| Overview** Azure Active Directory blade, in the **Manage** section, select **Users**, on the **Users | All users** blade, select your user account to display its **Profile** settings. 
 
-1. On the profile blade of your user account, select **Edit**, in the **Settings** section, set **Usage location** to **United States** and save the change.
+1. On the profile blade of your user account, select **Edit**, in the **Settings** section, set **Usage location** to **United States** and select **Save** to save the change.
 
     >**Note**: This is necessary in order to assign an Azure AD Premium P2 license to your user account later in this lab.
 
@@ -206,7 +206,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **Azure Active Directory Premium P2 \| Licensed users** blade, select **+ Assign**. 
 
-1. On the **Assign license** blade, select **Users**, and on the **Users** blade, select both your account and the **az30410-aaduser1** user account.
+1. On the **Assign license** blade, select **Users**, and on the **Users** blade, select both your account and the **az30410-aaduser1** user account and click **Select** for each.
 
 1. Back on the **Assign license** blade, select **Assignment options**, review the options listed on the **License options** blade, and select **OK**.
 
@@ -255,7 +255,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, search for and select **Virtual machines** and, on the **Virtual machines** blade, select **az30410a-vm1**.
 
-1. On the **az30410a-vm1** blade, select **Connect**, in the drop-down menu, select **RDP**, on the **RDP** tab of the **az30410a-vm1 | Connect** blade, in the **IP address** drop-down list, select the **Load balancer public IP address** entry, and then select **Download RDP File**.
+1. On the **az30410a-vm1** blade, select **Connect**, in the drop-down menu, select **RDP**, on the **RDP** tab of the **az30410a-vm1 | Connect** blade, in the **IP address** drop-down list, select the **Load balancer public IP address** entry, select **Download RDP File** and open the downloaded RDP file.
 
 1. When prompted, sign in with the following credentials:
 
@@ -429,7 +429,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 3: Verify Azure AD conditional access
 
-1. Within the Remote Desktop session to **az30410a-vm1**, start a new **InPrivate Browsing** Internet Explorer window and navigate to the Access Panel Applications portal [https://myapplications.microsoft.com](https://myapplications.microsoft.com).
+1. Within the Remote Desktop session to **az30410a-vm1**, in the **Internet Explorer** window, select **Settings** menu header, in the **Settings** menu, select **Safety**, in the cascading menu, select **InPrivate Browsing**, and, in the InPrivate Internet Explorer window, navigate to the Access Panel Applications portal [https://myapplications.microsoft.com](https://myapplications.microsoft.com).
 
 1. When prompted, sign in by using the synchronized Azure AD account of the **aduser1**, using the full user name you recorded in the previous exercise and the **Pa55w.rd1234** password. 
 
@@ -477,7 +477,7 @@ The main tasks for this exercise are as follows:
 
     > **Note**: If you receive an error message at this point, you might have to wait for up to 12 hours and try again.
 
-1. From the lab computer, in the browser window displaying the Azure portal, navigate to the **Azure Active Directory Premium P2 - Licensed users** blade, select the user accounts to which you assigned licenses in this lab, select **Remove license**, and, when prompted to confirm, select **OK**.
+1. From the lab computer, in the browser window displaying the Azure portal, switch to the **Adatum Lab** tenant, navigate to the **Azure Active Directory Premium P2 - Licensed users** blade, select the user accounts to which you assigned licenses in this lab, select **Remove license**, and, when prompted to confirm, select **OK**.
 
 1. In the Azure portal, navigate to the **Users - All users** blade and ensure that all user accounts you created in this lab are no longer listed as **Directory synced**.
 
@@ -489,7 +489,7 @@ The main tasks for this exercise are as follows:
 
 1. Navigate back to the **Delete directory 'Adatum Lab'** blade and select **Delete**.
 
-1. Within the Remote Desktop session to **az30410a-vm1**, in the browser window displaying the Azure portal, start a PowerShell session within the Cloud Shell pane.
+1. On the lab computer, in the browser window displaying the Azure portal, make sure you are connected to the original Azure Active Directory tenant, and start a PowerShell session within the Cloud Shell pane.
 
 1. From the Cloud Shell pane, run the following to list the resource group you created in this exercise:
 
