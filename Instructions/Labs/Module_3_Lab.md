@@ -123,7 +123,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **az30308a-hv-vm** blade, select **Networking**. 
 
-1. On the **az30308a-hv-vm | Networking** blade, select **az30308a-hv-vm-nic1** and then select **Add inbound port rule**.
+1. On the **az30308a-hv-vm | Networking** blade, ensure that the **az30308a-hv-vm-nic1** tab is selected and then select **Add inbound port rule**.
 
     >**Note**: Make sure that you modify the settings of **az30308a-hv-vm-nic1**, which has the public IP address assigned to it.
 
@@ -364,7 +364,7 @@ The main tasks for this exercise are as follows:
 
 1. Wait for the resource provisioning to complete, within the Remote Desktop session to **az30308a-hv-vm**, start Notepad, and copy the **Azure Migrate project key** into Notepad. 
 
-1. On the **Discover machines** blade, in the **Name your appliance** text box, select the **.VHD file** option, select **Download** and, when prompted, set the download location to the **F:\VMs** folder.
+1. On the **Discover machines** blade, in the **Download Azure Migrate appliance** text box, select the **.VHD file** option, select **Download** and, when prompted, set the download location to the **F:\VMs** folder.
 
    >**Note**: Wait for the download to complete. This might take about 5 minutes.
 
@@ -381,6 +381,8 @@ The main tasks for this exercise are as follows:
 1. On the **Choose Import Type** page of the **Import Virtual Machine** wizard, select **Register the virtual machine (use the existing unique ID)** and select **Next >**.
 
 1. On the **Configure Processor** page of the **Import Virtual Machine** wizard, set **Number of virtual processors** to **4**, and select **Next >**.
+
+   >**Note**: Ignore any error messages referring to the change of the number of virtual processors.
 
 1. On the **Connect Network** page of the **Import Virtual Machine** wizard, in the **Connection** drop-down list select **NestedSwitch** and select **Next >**.
 
@@ -446,7 +448,7 @@ The main tasks for this exercise are as follows:
 
    >**Note**: You might refresh the page again. 
 
-1. On the **Assess servers** blade, set **Assessment name** to **az30308a-assessment** and select the **View all** link next to the **Assessment properties** label.
+1. On the **Assess servers** blade, set **Assessment name** to **az30308a-assessment** and select the **Edit** link next to the **Assessment properties** label.
 
 1. On the **Assessment properties** blade, specify the following settings (leave others with their default values) and select **Save**:
 
@@ -465,7 +467,7 @@ The main tasks for this exercise are as follows:
 
    >**Note**: Considering the limited time inherent to the lab environment, the only viable option in this case is **As on-premises** assessment. 
 
-1. Back on the **Assess servers** blade, go to the **Select machines to assess** tab.
+1. Back on the **Assess servers** blade, select **Next** and then navigate to the **Select machines to assess** tab.
 
 1. Ensure that the **Create new** option is selected, set the group name to **az30308a-assessment-group**, in the list of machines to be added to the group, select **az30308a-vm1**.
 
@@ -495,11 +497,9 @@ The main tasks for this exercise are as follows:
 
 #### Task 1: Prepare for migration of Hyper-V VMs
 
-1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Internet Explorer window displaying the Azure portal, navigate back to the **Azure Migrate | Servers** blade, and select the **Click here** link in the **Migration tools** section. 
+1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Internet Explorer window displaying the Azure portal, navigate back to the **Azure Migrate | Servers** blade. 
 
-1. On the **Azure Migrate** blade, select **Azure Migrate: Server Migration** and select **Add tool**.
-
-1. Back on the **Azure Migrate | Servers** blade, in the **Azure Migrate: Server Migration** tile, select the **Discover** link. 
+1. On the **Azure Migrate | Servers** blade, in the **Azure Migrate: Server Migration** tile, select the **Discover** link. 
 
 1. On the **Discover machines** blade, specify the following settings (leave others with their default values) and select **Create resources**:
 
