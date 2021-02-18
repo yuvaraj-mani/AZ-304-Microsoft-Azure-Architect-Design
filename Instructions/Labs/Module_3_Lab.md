@@ -48,7 +48,7 @@ Estimated Time: 120 minutes
 
 ## Lab Files
 
--  \\\\AZ303\\AllFiles\\Labs\\08\\azuredeploy30308suba.json
+-  \\\\AZ304\\AllFiles\\Labs\\08\\azuredeploy30308suba.json
 
 
 ### Exercise 0: Prepare the lab environment
