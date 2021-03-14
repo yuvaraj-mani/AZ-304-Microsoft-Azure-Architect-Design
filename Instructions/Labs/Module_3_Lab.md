@@ -274,7 +274,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 3: Implement the target Azure environment
 
-1. In the Azure portal, search for and select **Virtual networks** and, on the **Virtual networks** blade, select **+ Add**.
+1. In the Azure portal, search for and select **Virtual networks** and, on the **Virtual networks** blade, select **+ New**.
 
 1. On the **Basics** tab of the **Create virtual network** blade, specify the following settings (leave others with their default values) and select **Next: IP Addresses**:
 
@@ -298,7 +298,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **Review + create** tab of the **Create virtual network** blade, select **Create**.
 
-1. In the Azure portal, search for and select **Virtual networks** and, on the **Virtual networks** blade, select **+ Add**.
+1. In the Azure portal, search for and select **Virtual networks** and, on the **Virtual networks** blade, select **+ New**.
 
 1. On the **Basics** tab of the **Create virtual network** blade, specify the following settings (leave others with their default values) and select **Next: IP Addresses**:
 
@@ -322,7 +322,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **Review + create** tab of the **Create virtual network** blade, select **Create**.
 
-1. In the Azure portal, search for and select **Storage accounts** and, on the **Storage accounts** blade, select **+ Add**.
+1. In the Azure portal, search for and select **Storage accounts** and, on the **Storage accounts** blade, select **+ New**.
 
 1. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
 
@@ -378,7 +378,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **Select Virtual Machine** page of the **Import Virtual Machine** wizard, select **Next >**:
 
-1. On the **Choose Import Type** page of the **Import Virtual Machine** wizard, select **Register the virtual machine (use the existing unique ID)** and select **Next >**.
+1. On the **Choose Import Type** page of the **Import Virtual Machine** wizard, select **Register the virtual machine in place (use the existing unique ID)** and select **Next >**.
 
 1. On the **Configure Processor** page of the **Import Virtual Machine** wizard, set **Number of virtual processors** to **4**, and select **Next >**.
 
@@ -439,14 +439,14 @@ The main tasks for this exercise are as follows:
 
 1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, in the **Provide Hyper-V host/cluster details** section, select **Start discovery**. 
 
-   >**Note**: In general, it might take about 1.5 minutes per host for metadata of discovered servers to appear in the Azure portal.
+   >**Note**: In general, it might take about 15 minutes per host for metadata of discovered servers to appear in the Azure portal.
 
 
 #### Task 2: Configure, run, and view an assessment
 
 1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Internet Explorer window displaying the Azure portal, navigate back to the **Azure Migrate | Servers** blade, select **Refresh**, and, in the **Azure Migrate: Server Assessment** tile, select **Assess**.
 
-   >**Note**: You might refresh the page again. 
+   >**Note**: You might need to refresh the page again. 
 
 1. On the **Assessment properties** blade, specify the following settings (leave others with their default values) and select **Save**:
 
@@ -511,7 +511,7 @@ The main tasks for this exercise are as follows:
 
     >**Note**: This step automatically triggers provisioning of an Azure Site Recovery vault.
 
-1. On the **Discover machines** blade, in step **1. Prepare Hyper-V host servers**, select the first **Download** link in order to download the Hyper-V replication provider software installer.
+1. On the **Discover machines** blade, in step **1. Prepare Hyper-V host servers**, select the first **Download** link (not the Download button), in order to download the Hyper-V replication provider software installer.
 
 1. When prompted, launch **AzureSiteRecoveryProvider.exe**. This will start the **Azure Site Recovery Provider Setup (Hyper-V server)** wizard.
 
