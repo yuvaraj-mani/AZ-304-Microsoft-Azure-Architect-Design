@@ -448,7 +448,7 @@ The main tasks for this exercise are as follows:
 
    >**Note**: You might need to refresh the page again. 
 
-1. On the **Assessment properties** blade, specify the following settings (leave others with their default values) and select **Save**:
+1. On the **Assessment properties** blade select **Edit** (the pencil icon), specify the following settings (leave others with their default values) and select **Save**:
 
     | Setting | Value | 
     | --- | --- |
