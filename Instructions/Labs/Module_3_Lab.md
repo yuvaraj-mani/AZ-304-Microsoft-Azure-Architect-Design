@@ -592,11 +592,11 @@ The main tasks for this exercise are as follows:
 
 1. On the **Azure Migrate: Server Migration | Replicating machines** blade, select the entry representing the **az30308a-vm1** virtual machine.
 
-1. On the **az30308a-vm1** replicating machines blade, select **Clean up test migration*.
+1. On the **az30308a-vm1** replicating machines blade, select **Clean up test migration**.
 
 1. On the **Test migrate cleanup** blade, select the checkbox **Testing is complete. Delete test virtual machine** and select **Cleanup Test**.
 
-1. Once the test failover cleanup job completes, refresh the browser page displaying the **az30308a-vm1** replicating machines blade and note that the **Migrate** icon in the toolbar became automatically available.
+1. Once the test failover cleanup job completes, refresh the browser page displaying the **az30308a-vm1** replicating machines blade and note that the **Migrate** icon in the toolbar automatically became available.
 
 1. On the **az30308a-vm1** replicating machines blade, select the **Migrate** link. 
 
@@ -604,7 +604,7 @@ The main tasks for this exercise are as follows:
 
 1. To monitor the status of migration, navigate back to the **Azure Migrate | Servers** blade, in the **Azure Migrate: Server Migration** tile, select the **Replicating servers** entry and, on the **Azure Migrate: Server Migration | Replicating machines**, examine the **Status** column in the list of the replicating machines. Verify that the status displayed the **Planned failover finished** status.
 
-   >**Note**: Migration is supposed to be a non-reversible action.
+   >**Note**: Migration is supposed to be a non-reversible action. If you want to see the completed information, navigate back to the Azure Migrate | Servers blade, refresh the page and verify that Migrated Servers in the Azure Migrate: Server Migration tile has a value of 1.
 
 
 #### Task 4: Remove Azure resources deployed in the lab
