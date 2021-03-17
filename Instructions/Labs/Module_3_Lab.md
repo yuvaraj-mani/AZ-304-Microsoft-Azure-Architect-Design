@@ -402,7 +402,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Virtual Machine Connection window to the virtual appliance, sign in by using the newly set password.
 
-1. Within the Remote Desktop session to the virtual appliance, start Windows PowerShell and run the following to identify its IP address.
+1. Within the Virtual Machine Connection window to the virtual appliance, start Windows PowerShell and run the following to identify its IP address.
 
    ```powershell
    (Get-NetIPAddress).IPAddress
@@ -423,7 +423,7 @@ The main tasks for this exercise are as follows:
 
 1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, select the **I agree** button, wait for the prerequisites to be successfully verified, and select **Continue**. 
 
-1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, in the **Register with Azure Migrate** section, in the **Provide Azure Migrate project key** text box, paste the key you copied into Notepad earlier in this exercise, select **Login**, accept the default code displayed in the **Enter code** pane in the browser page, sign in by providing credentials of a user account with the Owner role in the subscription you are using in this lab and close the browser page. 
+1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, in the **Register with Azure Migrate** section, in the **Provide Azure Migrate project key** text box, paste the key you copied into Notepad earlier in this exercise, select **Login**, accept the default code displayed and copy it to the clipboard, then select **Copy code and login** then in the **Enter code** pane in the browser page paste in the code you copied to the clipboard and select **Next**, sign in by providing credentials of a user account with the Owner role in the subscription you are using in this lab and close the browser page. 
 
 1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, verify that registration was successful and select **Continue**. 
 
@@ -448,7 +448,7 @@ The main tasks for this exercise are as follows:
 
    >**Note**: You might need to refresh the page again. 
 
-1. On the **Assessment properties** blade select **Edit** (the pencil icon), specify the following settings (leave others with their default values) and select **Save**:
+1. On the **Assessment properties** blade select **Edit**, specify the following settings (leave others with their default values) and select **Save**:
 
     | Setting | Value | 
     | --- | --- |
