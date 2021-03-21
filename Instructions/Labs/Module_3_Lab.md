@@ -150,7 +150,9 @@ The main tasks for this exercise are as follows:
 
 1. From the Remote Desktop session, open File Explorer and navigate to the **F:**. Create a folder named **VHDs**.
 
-1. Within the Remote Desktop session to **az30308a-hv-vm**, start Internet Explorer, browse to [Windows Server Evaluations](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019), and download the Windows Server 2019 **VHD** file to the **F:\VHDs** folder. 
+1. Within the Remote Desktop session to **az30308a-hv-vm**, start Internet Explorer, navigate to the download page of [Microsoft Edge](https://www.microsoft.com/en-us/edge/business/download), download Microsoft Edge installer and perform the installation. 
+
+1. Within the Remote Desktop session to **az30308a-hv-vm**, in Microsoft Edge, browse to [Windows Server Evaluations](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019), and download the Windows Server 2019 **VHD** file to the **F:\VHDs** folder. 
     
     ```url
     https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019
@@ -217,7 +219,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 1: Configure Hyper-V environment
 
-1. Within the Remote Desktop session to **az30308a-hv-vm**, start Internet Explorer, navigate to the [Microsoft Download Center](https://aka.ms/migrate/script/hyperv), and download the configuration PowerShell script to the **F:**.
+1. Within the Remote Desktop session to **az30308a-hv-vm**, start Microsoft Edge, navigate to the [Microsoft Download Center](https://aka.ms/migrate/script/hyperv), and download the configuration PowerShell script to the **F:**.
 
     ```url
     https://aka.ms/migrate/script/hyperv
@@ -258,7 +260,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 2: Create an Azure Migrate project
 
-1. Within the Remote Desktop session to **az30308a-hv-vm**, start Internet Explorer, navigate to the [Azure portal](https://portal.azure.com), and sign in by providing credentials of a user account with the Owner role in the subscription you will be using in this lab.
+1. Within the Remote Desktop session to **az30308a-hv-vm**, start Microsoft Edge, navigate to the [Azure portal](https://portal.azure.com), and sign in by providing credentials of a user account with the Owner role in the subscription you will be using in this lab.
 
 1. In the Azure portal, search for and select **Azure Migrate**, on the **Azure Migrate** blade, in the **Migration goals** section, select **Servers** and then select **Create Project**.
 
@@ -352,7 +354,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 1: Deploy and configure the Azure Migrate appliance
 
-1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Internet Explorer window, in the Azure portal, search for and select **Azure Migrate**.
+1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Microsoft Edge window, in the Azure portal, search for and select **Azure Migrate**.
 
 1. On the **Azure Migrate | Servers** blade, select **Discover** in the **Azure Migrate: Server Assessment** tile. 
 
@@ -444,7 +446,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 2: Configure, run, and view an assessment
 
-1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Internet Explorer window displaying the Azure portal, navigate back to the **Azure Migrate | Servers** blade, select **Refresh**, and, in the **Azure Migrate: Server Assessment** tile, select **Assess**.
+1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Microsoft Edge window displaying the Azure portal, navigate back to the **Azure Migrate | Servers** blade, select **Refresh**, and, in the **Azure Migrate: Server Assessment** tile, select **Assess**.
 
    >**Note**: You might need to refresh the page again. 
 
@@ -497,7 +499,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 1: Prepare for migration of Hyper-V VMs
 
-1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Internet Explorer window displaying the Azure portal, navigate back to the **Azure Migrate | Servers** blade. 
+1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Microsoft Edge window displaying the Azure portal, navigate back to the **Azure Migrate | Servers** blade. 
 
 1. On the **Azure Migrate | Servers** blade, in the **Azure Migrate: Server Migration** tile, select the **Discover** link. 
 
