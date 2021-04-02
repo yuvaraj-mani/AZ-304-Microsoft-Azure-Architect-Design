@@ -238,7 +238,7 @@ The main tasks for this exercise are as follows:
 
 1. In the the Azure portal, on the Logic App Designer blade of the newly provisioned Azure logic app, select **+ New step**. 
 
-1. In the choose an action tile, use the **Search connectors and triggers** text box, to search for **Condition**, in the list of results, in the **Actions** column, select **Condition** to add it to the designer workspace.
+1. In the choose an operation tile, use the **Search connectors and actions** text box, to search for **Condition**, in the list of results, in the **Actions** column, select **Condition** to add it to the designer workspace.
 
 1. Select the ellipsis symbol in the upper right corner of the **Condition** tile, in the pop-up menu, select **Rename**, and replace **Condition** with the text **If a virtual machine in the resource group has changed**. 
 

@@ -60,7 +60,7 @@ The main tasks for this exercise are as follows:
 
 1. From your lab computer, start a web browser, navigate to the [Azure portal](https://portal.azure.com), and sign in by providing credentials of a user account with the Owner role in the subscription you will be using in this lab.
 
-1. In the Azure portal, search for and select **SQL database** and, on the **SQL databases** blade, select **+ New**.
+1. In the Azure portal, search for and select **SQL database** and, on the **SQL databases** blade, select **+ Add**.
 
 1. On the **Basics** tab of the **Create SQL Database** blade, specify the following settings (leave others with their default values):
 
@@ -93,6 +93,14 @@ The main tasks for this exercise are as follows:
     | Allow Azure services and resources to access this server | **No** |
     | Add current client IP address | **Yes** |
 
+1. Select **Next: Security >**.
+
+1. On the **Security** tab of the **Create SQL Database** blade, specify the following settings (leave others with their default values):
+
+    | Setting | Value | 
+    | --- | --- |
+    | Enable Azure Defender for SQL | **Not now** |
+
 1. Select **Next: Additional settings >**. 
 
 1. On the **Additional settings** tab of the **Create SQL Database** blade, specify the following settings (leave others with their default values):
@@ -100,7 +108,6 @@ The main tasks for this exercise are as follows:
     | Setting | Value | 
     | --- | --- |
     | Use existing data | **Sample** |
-    | Enable Azure Defender for SQL | **Not now** |
 
 1. Select **Review + create** and then select **Create**. 
 
