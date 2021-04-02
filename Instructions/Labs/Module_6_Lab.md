@@ -93,6 +93,14 @@ The main tasks for this exercise are as follows:
     | Allow Azure services and resources to access this server | **No** |
     | Add current client IP address | **Yes** |
 
+1. Select **Next: Security >**.
+
+1. On the **Security** tab of the **Create SQL Database** blade, specify the following settings (leave others with their default values):
+
+    | Setting | Value | 
+    | --- | --- |
+    | Enable Azure Defender for SQL | **Not now** |
+
 1. Select **Next: Additional settings >**. 
 
 1. On the **Additional settings** tab of the **Create SQL Database** blade, specify the following settings (leave others with their default values):
@@ -100,7 +108,6 @@ The main tasks for this exercise are as follows:
     | Setting | Value | 
     | --- | --- |
     | Use existing data | **Sample** |
-    | Enable Azure Defender for SQL | **Not now** |
 
 1. Select **Review + create** and then select **Create**. 
 
