@@ -611,7 +611,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 4: Remove Azure resources deployed in the lab
 
-1. Within the Remote Desktop session to **az30308a-vm0**, in the browser window displaying the Azure portal, start a PowerShell session within the Cloud Shell pane.
+1. Within the Remote Desktop session to **az30308a-hv-vm**, in the browser window displaying the Azure portal, start a PowerShell session within the Cloud Shell pane.
 
 1. From the Cloud Shell pane, run the following to list the resource group you created in this exercise:
 
