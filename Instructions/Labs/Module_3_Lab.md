@@ -423,7 +423,7 @@ The main tasks for this exercise are as follows:
     | User Name | **Administrator** |
     | Password | **Pa55w.rd1234** |
 
-1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, select the **I agree** button, wait for the prerequisites to be successfully verified, and select **Continue**. 
+1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, select the **I agree** button, wait for the prerequisites to be successfully verified. 
 
 1. Within the Microsoft Edge window, on the **Appliance Configuration Manager** page, in the **Register with Azure Migrate** section, in the **Provide Azure Migrate project key** text box, paste the key you copied into Notepad earlier in this exercise, select **Login**, accept the default code displayed and copy it to the clipboard, then select **Copy code and login** then in the **Enter code** pane in the browser page paste in the code you copied to the clipboard and select **Next**, sign in by providing credentials of a user account with the Owner role in the subscription you are using in this lab and close the browser page. 
 
