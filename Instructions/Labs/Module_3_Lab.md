@@ -446,7 +446,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 2: Configure, run, and view an assessment
 
-1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Microsoft Edge window displaying the Azure portal, navigate back to the **Azure Migrate | Windows, Linux and SQL Server** blade, select **Refresh**, and, in the **Azure Migrate: Server Assessment** tile, open the dropdown **Assess** and select **Azure VM**.
+1. Within the Remote Desktop session to **az30308a-hv-vm**, in the Microsoft Edge window displaying the Azure portal, navigate back to the **Azure Migrate | Windows, Linux and SQL Server** blade, select **Refresh**, and, in the **Azure Migrate: Discovery and assessment** tile, open the dropdown **Assess** and select **Azure VM**.
 
    >**Note**: You might need to refresh the page again. 
 
