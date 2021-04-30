@@ -358,7 +358,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **Azure Migrate | Windows, Linux and SQL Server** blade, select **Discover** in the **Azure Migrate: Server Assessment** tile. 
 
-1. On the **Discover machines** blade, in the **Are your machines virtualized** drop-down list, select **Yes, with Hyper-V**. 
+1. On the **Discover machines** blade, in the **Are your servers virtualized** drop-down list, select **Yes, with Hyper-V**. 
 
 1. On the **Discover machines** blade, in the **Name your appliance** text box, type **az30308a-vma1** and select the **Generate key** button.
 
