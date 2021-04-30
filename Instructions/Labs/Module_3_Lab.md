@@ -276,7 +276,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 3: Implement the target Azure environment
 
-1. In the Azure portal, search for and select **Virtual networks** and, on the **Virtual networks** blade, select **+ New**.
+1. In the Azure portal, search for and select **Virtual networks** and, on the **Virtual networks** blade, select **+ Add** (or **+ Create**) on the command bar.
 
 1. On the **Basics** tab of the **Create virtual network** blade, specify the following settings (leave others with their default values) and select **Next: IP Addresses**:
 
@@ -300,7 +300,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **Review + create** tab of the **Create virtual network** blade, select **Create**.
 
-1. In the Azure portal, search for and select **Virtual networks** and, on the **Virtual networks** blade, select **+ New**.
+1. In the Azure portal, search for and select **Virtual networks** and, on the **Virtual networks** blade, select **+ Add** (or **+ Create**) on the command bar.
 
 1. On the **Basics** tab of the **Create virtual network** blade, specify the following settings (leave others with their default values) and select **Next: IP Addresses**:
 
@@ -324,7 +324,7 @@ The main tasks for this exercise are as follows:
 
 1. On the **Review + create** tab of the **Create virtual network** blade, select **Create**.
 
-1. In the Azure portal, search for and select **Storage accounts** and, on the **Storage accounts** blade, select **+ New**.
+1. In the Azure portal, search for and select **Storage accounts** and, on the **Storage accounts** blade, select **+ Add** (or **+ Create**) on the command bar.
 
 1. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
 
