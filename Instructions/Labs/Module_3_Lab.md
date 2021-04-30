@@ -326,7 +326,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, search for and select **Storage accounts** and, on the **Storage accounts** blade, select **+ Add** (or **+ Create**) on the command bar.
 
-1. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
+1. On the **Basics** tab of the **Create a storage account** blade, specify the following settings (leave others with their default values):
 
     | Setting | Value | 
     | --- | --- |
@@ -336,11 +336,11 @@ The main tasks for this exercise are as follows:
     | Location | the name of the Azure region in which you created the virtual network earlier in this task |
     | Performance | **Standard** |
     | Account kind | **StorageV2 (general purpose v2)** |
-    | Replication | **Locally redundant storage (LRS)** |
+    | Redundancy | **Locally redundant storage (LRS)** |
 
-1. On the **Basics** tab of the **Create storage account** blade, select **Review + create**.
+1. On the **Basics** tab of the **Create a storage account** blade, select **Review + create**.
 
-1. On the **Review + create** tab of the **Create storage account** blade, select **Create**.
+1. On the **Review + create** tab of the **Create a storage account** blade, select **Create**.
 
 
 ### Exercise 2: Assess Hyper-V for migration by using Azure Migrate
