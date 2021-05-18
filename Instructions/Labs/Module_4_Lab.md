@@ -207,11 +207,11 @@ The main tasks for this exercise are as follows:
 
 1. On the **Azure Active Directory Premium P2 \| Licensed users** blade, select **+ Assign**. 
 
-1. On the **Assign license** blade, select **Users**, and on the **Users** blade, select both your account and the **az30410-aaduser1** user account and click **Select** for each.
+1. On the **Assign license** blade, select **Add users and groups**, and on the **Add users and groups** blade, select both your account and the **az30410-aaduser1** user account and click **Select** for each.
 
 1. Back on the **Assign license** blade, select **Assignment options**, review the options listed on the **License options** blade, and select **OK**.
 
-1. On the **Assign license** blade, select **Assign**. 
+1. On the **Assign license** blade, select **Review and Assign** the on the **Assign** page, select **Assign**. 
 
 
 ### Exercise 2: Integrate an AD DS forest with an Azure AD tenant
