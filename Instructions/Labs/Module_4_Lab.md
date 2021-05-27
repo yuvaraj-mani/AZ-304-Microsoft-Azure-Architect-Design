@@ -449,7 +449,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 4: Remove Azure resources deployed in the lab
 
-1. Within the Remote Desktop session to **az30410a-vm1**, start Microsoft Edge and browse to the Microsoft Online Services Sign-In Assistant for IT Professionals RTW at [https://www.microsoft.com/en-us/Download/details.aspx?id=28177](https://www.microsoft.com/en-us/Download/details.aspx?id=28177). 
+1. Within the Remote Desktop session to **az30410a-vm1**, start Microsoft Edge and browse to the Microsoft Online Services Sign-In Assistant for IT Professionals RTW at [https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_64bit.msi](**https://www.microsoft.com/en-us/Download/details.aspx?id=28177**). 
 
 1. On the Microsoft Online Services Sign-In Assistant for IT Professionals RTW download page, select **Download**, on the **Choose the download you want** page, select **en\msoidcli_64.msi**, and select **Next**. 
 
