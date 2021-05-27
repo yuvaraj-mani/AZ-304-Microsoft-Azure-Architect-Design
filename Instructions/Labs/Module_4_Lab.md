@@ -290,7 +290,13 @@ The main tasks for this exercise are as follows:
 
 #### Task 3: Install Azure AD Connect
 
-1. Within the Remote Desktop session to **az30410a-vm1**, start Internet Explorer, navigate to the download page of [Microsoft Edge](https://www.microsoft.com/en-us/edge/business/download), download Microsoft Edge installer and perform the installation. 
+1. Within the Remote Desktop session to **az30410a-vm1**, start Internet Explorer, navigate to the download page of [Microsoft Edge](https://www.microsoft.com/en-us/edge/business/download), then scroll down until you see the Channel, Build, and Platform options.
+
+1. In Select channel/version dropdown select the version indicating Stable ## (Current and supported).
+
+1. In Select build dropdown select the newest build.
+
+1. In Select platform dropdown select Windows 64-bit. Then click Download.
 
 1. Within the Remote Desktop session to **az30410a-vm1**, in Microsoft Edge, navigate to the [Azure portal](https://portal.azure.com), and sign in by using the **az30410-aaduser1** user account you created the previous exercise. When prompted, specify the full user name you recorded and the **Pa55w.rd1234** password.
 
