@@ -300,7 +300,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 1: Configure event subscription
 
-1. In the Azure portal, navigate to the **az30304b-logicapp1** blade, in the **Summary** section, select **Trigger history**. 
+1. In the Azure portal, navigate to the **az30304b-logicapp1** blade, select **Trigger history**. 
 
 1. On the **When_a_resource_event_occurs** blade, copy the value of the **Callback url [POST]** text box.
 
