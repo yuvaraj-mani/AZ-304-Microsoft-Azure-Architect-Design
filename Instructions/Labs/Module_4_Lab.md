@@ -142,7 +142,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 1: Create an Azure AD tenant
 
-1. In the Azure portal, search for and select **Azure Active Directory** and, on the Azure Active Directory blade, select **+ Create a tenant**.
+1. In the Azure portal, search for and select **Azure Active Directory** and, on the Azure Active Directory blade, select **Manage Tenants** and then select **+ Create**.
 
 1. On the **Basics** tab of the **Create a tenant** blade, select the **Azure Active Directory** option and select **Next: Configuration >**.
 
