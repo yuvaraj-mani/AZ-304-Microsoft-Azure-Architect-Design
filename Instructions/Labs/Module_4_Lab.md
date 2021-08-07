@@ -455,7 +455,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 4: Remove Azure resources deployed in the lab
 
-1. Within the Remote Desktop session to **az30410a-vm1**, download the installation package of Microsoft Online Services Sign-In Assistant for IT Professionals RTW at [https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_64bit.msi](**https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_64bit.msi**). 
+1. Within the Remote Desktop session to **az30410a-vm1**, download the installation package of Microsoft Online Services Sign-In Assistant for IT Professionals RTW at [https://www.manageengine.com/products/desktop-central/software-installation/silent_install_Microsoft-Online-Services-Sign-In-Assistant-(64bit).html](**https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_64bit.msi**). 
 
 1. Once you download `msi` package, run it with the default options.
 
